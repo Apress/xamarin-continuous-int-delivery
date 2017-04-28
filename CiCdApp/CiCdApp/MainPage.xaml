@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CiCdApp.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Entry x:Name="MyTextEntry" AutomationId="TextEntry" />
+        <StackLayout Orientation="Horizontal">
+            <Button Text="It's all good" x:Name="MyGoodButton" AutomationId="GoodButtonForTextEntry" Clicked="MyGoodButton_OnClicked" TextColor="Green" />
+            <Button Text="BOOM" x:Name="MyBadButton" AutomationId="BadButtonForTextEntry" TextColor="Red" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
